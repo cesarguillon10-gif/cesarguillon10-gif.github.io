@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Brief · Monday, October 12, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ---- Slick charcoal editorial theme (always dark) ---- */
+:root{
+  --bg:#121317; --bg2:#181a20; --card:#1a1c22; --ink:#f5f4f1; --body:#d2d4db;
+  --muted:#868997; --line:#2a2d36; --line-soft:#20232b;
+  --geo:#8b85ff; --mkt:#5fd996; --war:#ff6b60; --ai:#22d3ee; --cyb:#e879f9; --glb:#ffb454; --good:#2dd4bf;
+  --accent:var(--glb);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--body);font-family:var(--sans);
+  line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.wrap{max-width:740px;margin:0 auto;padding:44px 22px 90px}
+
+/* Masthead */
+header{position:relative;padding:0 0 18px;margin-bottom:32px;border-bottom:1px solid var(--line)}
+header::after{content:"";position:absolute;left:0;bottom:-1px;width:66px;height:2px;
+  background:linear-gradient(90deg,var(--glb),var(--cyb))}
+.kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);font-weight:600}
+header h1{font-family:var(--serif);font-optical-sizing:auto;font-weight:600;font-size:40px;line-height:1.03;
+  margin:11px 0 0;color:var(--ink);letter-spacing:-.015em}
+
+/* Top 3 things to know */
+.tldr{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:42px}
+.tldr h2{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 15px}
+.tldr ol{margin:0;padding:0;list-style:none;counter-reset:t}
+.tldr li{position:relative;padding:0 0 0 30px;margin:12px 0;font-size:15.5px;font-weight:500;color:var(--ink);counter-increment:t}
+.tldr li::before{content:counter(t);position:absolute;left:0;top:-1px;font-family:var(--serif);
+  font-size:16px;font-weight:600;color:var(--glb)}
+
+/* Section headers with trailing hairline */
+section.cat{margin-bottom:42px}
+section.cat > h2{display:flex;align-items:center;gap:12px;font-family:var(--sans);font-size:12px;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:0 0 20px}
+section.cat > h2::after{content:"";flex:1 1 auto;height:1px;background:var(--line)}
+.dot{width:9px;height:9px;flex:0 0 auto;background:var(--accent);transform:rotate(45deg)}
+section.cat[data-cat="geo"]{--accent:var(--geo)}
+section.cat[data-cat="mkt"]{--accent:var(--mkt)}
+section.cat[data-cat="war"]{--accent:var(--war)}
+section.cat[data-cat="ai"]{--accent:var(--ai)}
+section.cat[data-cat="cyb"]{--accent:var(--cyb)}
+section.cat[data-cat="glb"]{--accent:var(--glb)}
+section.cat[data-cat="good"]{--accent:var(--good)}
+
+/* Lead image */
+.herofig{margin:0 0 38px}
+.hero{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:8px;display:block;
+  margin:0 0 9px;background:var(--bg2);border:1px solid var(--line-soft)}
+.hero-cap{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--muted);margin:0;text-align:center}
+
+/* Items */
+.item{display:flex;gap:16px;align-items:flex-start;background:var(--card);
+  border:1px solid var(--line-soft);border-left:2px solid var(--accent);border-radius:8px;
+  padding:15px 17px;margin-bottom:11px;transition:border-color .15s ease,background .15s ease}
+.item:hover{background:#1e2028}
+.thumb{width:118px;height:80px;object-fit:cover;border-radius:6px;flex:0 0 auto;background:var(--bg2);order:2}
+.item .body{flex:1 1 auto;min-width:0;order:1}
+.headline{font-family:var(--sans);font-size:19px;font-weight:700;line-height:1.32;
+  color:var(--ink);text-decoration:none;display:inline-block;letter-spacing:-.006em}
+.headline:hover{color:var(--accent)}
+.meta{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:8px 0 7px;font-weight:500}
+.summary{margin:0;font-size:15px;line-height:1.58;color:var(--body)}
+.more{margin-top:10px}
+.more > summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--accent);
+  -webkit-tap-highlight-color:transparent;user-select:none}
+.more > summary::-webkit-details-marker{display:none}
+.more > summary::after{content:"\203A";font-weight:700;font-size:15px;line-height:1;
+  transition:transform .15s ease}
+.more[open] > summary::after{transform:rotate(90deg)}
+.more > summary:hover{opacity:.82}
+.more .why{margin:9px 0 1px;font-size:14px;line-height:1.55;color:var(--body);
+  padding-left:12px;border-left:2px solid color-mix(in srgb, var(--accent) 45%, var(--line))}
+
+/* Something Good */
+section.cat[data-cat="good"]{background:color-mix(in srgb, var(--good) 6%, var(--bg));
+  border:1px solid color-mix(in srgb, var(--good) 20%, var(--line));border-radius:12px;
+  padding:22px 22px 11px;margin-top:52px}
+section.cat[data-cat="good"] > h2{margin-bottom:8px}
+section.cat[data-cat="good"] .item{background:color-mix(in srgb, var(--good) 5%, var(--card))}
+.good-sub{font-size:13px;color:var(--muted);margin:0 0 16px}
+
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);text-align:center}
+footer a{color:var(--muted)}
+
+@media (max-width:520px){
+  .wrap{padding:34px 16px 72px}
+  header h1{font-size:31px}
+  .headline{font-size:17px}
+  .thumb{width:94px;height:68px}
+}
+</style>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Morning Brief">
+  <meta name="theme-color" content="#121317">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/apple-touch-icon.png">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Morning Intelligence Brief</div>
+    <h1>Monday, October 12, 2026</h1>
+  </header>
+
+  <section class="tldr">
+    <h2>Top 3 things to know</h2>
+    <ol>
+      <li>Houthi missile strike kills at least 12 at Riyadh's main airport, sharply escalating the Yemen-Saudi war.</li>
+      <li>Trump says Russia and Ukraine agreed to stop hitting energy sites; Zelensky says "that's news to me."</li>
+      <li>South African jurist Navi Pillay wins the 2026 Nobel Peace Prize for prosecuting war crimes and genocide.</li>
+    </ol>
+  </section>
+
+  <figure class="herofig">
+    <img class="hero" src="https://s.france24.com/media/display/0521e248-c550-11f1-8562-29a2e29ae696/w:1024/p:16x9/2026-02-17T000000Z-191424583-MT1IMGOST000OXOJ1D-RTRMADP-3-IMAGO-IMAGES.jpg" alt="King Khalid International Airport in Riyadh" onerror="this.closest('figure').remove()">
+    <figcaption class="hero-cap">A missile strike on Riyadh's King Khalid International Airport killed at least 12 people over the weekend, the deadliest attack on Saudi soil in over a decade.</figcaption>
+  </figure>
+
+  <section class="cat" data-cat="geo">
+    <h2><span class="dot"></span>Geopolitics &amp; Diplomacy</h2>
+
+    <article class="item">
+      <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Navi_Pillay_June_2014.jpg" alt="Navi Pillay" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.aljazeera.com/news/2026/10/9/who-is-navi-pillay-winner-of-the-2026-nobel-peace-prize" target="_blank" rel="noopener">South African judge Navi Pillay wins the 2026 Nobel Peace Prize</a>
+        <div class="meta">Al Jazeera · Friday, Oct 9</div>
+        <p class="summary">The Norwegian Nobel Committee honored her decades of work prosecuting genocide and war crimes.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Pillay, 86, was the first woman of color on South Africa's High Court and later led the tribunal that prosecuted the 1994 Rwanda genocide before serving as the UN's top human rights official. She also chaired a UN panel that concluded Israel committed genocide in Gaza, a finding Israel rejects, making her win politically pointed as well as symbolic. She said she would dedicate the prize "to all of the survivors of international crimes."</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://images.euronews.com/articles/stories/09/94/25/81/1536x864_cmsv2_25ff35e1-c942-5209-a3fc-907b7b74ef13-9942581.jpg" alt="EU flags" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.euronews.com/2026/10/07/eu-agrees-to-sanction-over-1600-people-and-entities-linked-to-russias-war" target="_blank" rel="noopener">EU blacklists 1,600+ people and companies over Russia's war, its biggest sanctions round yet</a>
+        <div class="meta">Euronews · Wednesday, Oct 7</div>
+        <p class="summary">The EU (the 27-country bloc) added 743 individuals and 826 companies, mostly tied to weapons production, to its Russia sanctions list.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">This is the largest single expansion of EU sanctions since Russia's full invasion of Ukraine began in 2022, and it also targets 77 lawmakers who ran in elections the EU doesn't recognize in Russian-occupied Ukrainian territory. Those listed face a travel ban, frozen assets, and a ban on receiving funds from EU entities. The move comes as the EU also weighs a change that would let it approve future sanctions without needing every member country to agree.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_avif,q_auto:best/rockcms/2026-10/20261009-india-protests-jj-1224a-7a833f.jpg" alt="Protesters in India" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.nbcnews.com/world/asia/thousands-protest-india-cockroach-movement-election-chief-resignation-rcna602436" target="_blank" rel="noopener">Thousands protest in India after a voter-list purge removes 130 million names</a>
+        <div class="meta">NBC News / AP · Friday, Oct 9</div>
+        <p class="summary">A youth-led "Cockroach" movement is demanding India's election chief resign over a disputed nationwide voter-roll review.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">India's Election Commission says the review, called the Special Intensive Revision, simply removes duplicate or ineligible voters, but the opposition says it disproportionately strikes its own supporters ahead of future elections. Police briefly detained opposition leader Rahul Gandhi and protest leaders in Delhi, fueling accusations that the world's largest democracy is tilting the playing field. With appeals confusing and many people lacking the old records required to prove eligibility, the controversy could shape voter turnout for years.</p>
+        </details>
+      </div>
+    </article>
+  </section>
+
+  <section class="cat" data-cat="mkt">
+    <h2><span class="dot"></span>Markets &amp; Investments</h2>
+
+    <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Nasdaq_Tower_May_2026.jpg/960px-Nasdaq_Tower_May_2026.jpg" alt="Nasdaq Tower" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-friday-1092026-nid09102026/" target="_blank" rel="noopener">Wall Street closes near record highs despite rising oil and bond yields</a>
+        <div class="meta">AP, via La Nación · Friday, Oct 9 close</div>
+        <p class="summary">The S&amp;P 500 rose 0.6% to 7,811.54 and the Dow gained 0.8%, both near their all-time highs.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Stocks climbed even as the 10-year Treasury yield (the benchmark interest rate the government pays to borrow, which also sets the floor for mortgage and loan rates) pushed toward its highest level in over two decades, around 5.24%. That's an unusual combination — investors are betting company profits can outrun higher borrowing costs for now, a bet that gets tested this week as big banks start reporting earnings.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/West_Texas_Pumpjack.JPG/960px-West_Texas_Pumpjack.JPG" alt="Oil pumpjack" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://hdfcsky.com/news/brent-crude-oil-price-today-october-12-2026-brent-falls-1-5percent-to-103-wti-drops-1-8percent-to-90-2-middle-east-risks-persist" target="_blank" rel="noopener">Oil prices swing wildly, stay above $100 a barrel after Saudi airport attack</a>
+        <div class="meta">Market reports · Monday, Oct 12</div>
+        <p class="summary">Brent crude (the global oil price benchmark) touched $105 before easing to around $103 after a claimed Russia-Ukraine energy truce.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Oil jumped on fears that the weekend's Houthi missile attack on Saudi Arabia's main airport could widen into a broader disruption of Gulf oil supply, before easing on hopes that Ukraine and Russia might stop striking each other's energy infrastructure. Pricier oil feeds directly into inflation and fuel costs, which is why investors are watching the Yemen-Saudi conflict and the Ukraine war so closely right now.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/270parkave_from_empirestate_03_14_2025_%28cropped%29.jpg/960px-270parkave_from_empirestate_03_14_2025_%28cropped%29.jpg" alt="JPMorgan Chase headquarters" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.cmcmarkets.com/en-ie/news-and-analysis/the-week-ahead-us-cpi-eurozone-cpi-jpmorgan-earnings" target="_blank" rel="noopener">Bank earnings season kicks off this week, led by JPMorgan</a>
+        <div class="meta">CMC Markets · week ahead, published Oct 9-ish</div>
+        <p class="summary">JPMorgan Chase, the largest US bank, reports Tuesday and is expected to post profit up about 16% from a year ago.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">JPMorgan traditionally reports first each quarter, so its results often set the tone for how investors view the whole banking sector and, by extension, the health of the broader economy. Options markets are pricing in an unusually large price swing (about ±5.2%, versus a typical ±3.4%) on the news, a sign investors see this earnings season as more consequential than usual given high interest rates and market jitters over AI spending.</p>
+        </details>
+      </div>
+    </article>
+  </section>
+
+  <section class="cat" data-cat="war">
+    <h2><span class="dot"></span>War &amp; Conflict</h2>
+
+    <article class="item">
+      <img class="thumb" src="https://s.france24.com/media/display/0521e248-c550-11f1-8562-29a2e29ae696/w:1024/p:16x9/2026-02-17T000000Z-191424583-MT1IMGOST000OXOJ1D-RTRMADP-3-IMAGO-IMAGES.jpg" alt="Riyadh airport" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.cbsnews.com/news/riyadh-saudi-airport-attack-deaths-injuries/" target="_blank" rel="noopener">Missile strike on Riyadh's airport kills 12, wounds 300+; Houthis claim follow-up attacks</a>
+        <div class="meta">CBS News / AP · Saturday-Sunday, Oct 10-11</div>
+        <p class="summary">Yemen's Iran-aligned Houthi rebels struck Saudi Arabia's main airport, the deadliest attack on the kingdom in over a decade.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">The dead included citizens of Saudi Arabia, the US, Bangladesh, Egypt, Jordan, Syria, Palestine and Sudan, reflecting how international the airport's traffic is. A Saudi-led military coalition has been fighting the Houthis, who control much of Yemen, and a UN envoy has warned the country has slid back into "full-scale war." President Trump said the US is weighing whether to join Saudi airstrikes against the Houthis, which would mark a significant deepening of American involvement.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-760x428,f_avif,q_auto:best/mpx/2704722219/2026_10/1791758990864_wnn_yaukraineceasefire_261011_S3_1920x1080-o64pg6.jpg" alt="Ukraine energy ceasefire" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.nbcnews.com/world/ukraine/trump-russia-ukraine-agree-energy-ceasefire-zelenskyy-diesel-rcna602766" target="_blank" rel="noopener">Trump says Russia and Ukraine agreed to an energy ceasefire; Zelensky says he wasn't told</a>
+        <div class="meta">NBC News · Sunday-Monday, Oct 11-12</div>
+        <p class="summary">Russia struck Ukrainian power plants in Kharkiv and Kyiv hours after Trump claimed both sides would stop hitting energy sites.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Trump posted on social media that an energy ceasefire was "in effect," but Ukraine's president Volodymyr Zelensky said it was "news to me" and that Moscow never confirmed any such deal. Trump made a nearly identical claim a month ago, and strikes continued then too, which fuels doubts about whether real negotiations are happening versus a public-relations move. The White House is separately pressing Kyiv to stop hitting Russian oil refineries and has floated cutting weapons supplies if it doesn't comply.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/An_aerial_view_showing_destruction_in_Rafah_after_Israeli_forces_withdrawal_and_as_the_ceasefire_took_hold%2C_Gaza_Strip.jpg/960px-An_aerial_view_showing_destruction_in_Rafah_after_Israeli_forces_withdrawal_and_as_the_ceasefire_took_hold%2C_Gaza_Strip.jpg" alt="Rafah, Gaza Strip" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://english.palinfo.com/news/2026/10/11/371813/" target="_blank" rel="noopener">Israeli fire kills several Palestinians in Gaza amid fresh ceasefire-violation claims</a>
+        <div class="meta">Palestinian officials, via PalInfo · Sunday, Oct 11</div>
+        <p class="summary">Palestinian officials say Israeli forces fired near the "Yellow Line" buffer zone and shelled Rafah, killing at least four people, including a child.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">The ceasefire that ended the two-year Gaza war took hold a year ago, but it has been punctuated by repeated flare-ups like this one, as both Israel and Hamas accuse each other of violations. The "Yellow Line" is the informal pullback line Israeli troops hold inside Gaza, and Israel's defense minister has said any crossing will be met with fire. A UN-backed international force is meant to eventually stabilize Gaza, but Hamas still controls roughly half the territory and disputes over disarmament remain unresolved.</p>
+        </details>
+      </div>
+    </article>
+  </section>
+
+  <section class="cat" data-cat="ai">
+    <h2><span class="dot"></span>Artificial Intelligence</h2>
+
+    <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/TSMC_Global_R%EF%BC%86D_Center_at_night.jpg/960px-TSMC_Global_R%EF%BC%86D_Center_at_night.jpg" alt="TSMC" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.fool.com/investing/2026/10/11/tsmc-reports-oct-15-it-s-the-best-early-read-on-nvidia-s-next-quarter/" target="_blank" rel="noopener">Chipmaker TSMC's earnings Thursday seen as the best early clue to Nvidia's next quarter</a>
+        <div class="meta">The Motley Fool · Sunday, Oct 11</div>
+        <p class="summary">TSMC, which manufactures Nvidia's AI chips, has guided to $44.6-45.8 billion in revenue, up 37% from a year ago.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Nvidia itself doesn't report results until November, so investors use TSMC's (Taiwan Semiconductor Manufacturing Company) numbers as an early read on how strong AI chip demand really is. Nvidia has guided to roughly $108 billion in revenue for the same quarter, a nearly 90% jump from a year earlier, and TSMC's chairman has said packaging capacity is now so tight it's limiting how fast customers like Nvidia can grow.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://financefeeds.com/wp-content/uploads/2026/09/featured-web-3.jpg" alt="Anthropic IPO" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://financefeeds.com/anthropics-14-october-investor-day-nears-but-its-s-1-still-isnt-public-the-ipo-timeline-explained/" target="_blank" rel="noopener">Claude-maker Anthropic nears IPO investor day, eyeing a valuation near $2 trillion</a>
+        <div class="meta">FinanceFeeds · Monday, Oct 12</div>
+        <p class="summary">Anthropic is reportedly meeting investors Wednesday ahead of a stock listing that could value it well above its current $965 billion.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">An IPO (a company's first sale of stock to the public) this big would be one of the largest tech listings ever, and reported valuation talk ranges from $1.8 trillion to $3 trillion. Anthropic, maker of the Claude chatbot, hasn't confirmed a date, ticker, or price, but Bloomberg reports banks including Morgan Stanley and Goldman Sachs are lined up to lead it, with trading potentially starting before Thanksgiving. It would be a major test of whether investors still believe sky-high AI valuations are justified.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="body">
+        <a class="headline" href="https://aiweekly.co/alerts/introducing-claude-haiku-55" target="_blank" rel="noopener">Anthropic cuts prices roughly 75% with new fast, cheap Claude Haiku 5.5 model</a>
+        <div class="meta">Anthropic / AI Weekly · Wednesday, Oct 7</div>
+        <p class="summary">The new small AI model targets high-volume tasks like summarizing and classifying text at a fraction of the old cost.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Haiku 5.5 costs about $0.10 per million "input tokens" (roughly the words a user feeds the model) versus $1 for its predecessor, a steep cut aimed at businesses running huge volumes of simple AI tasks like customer support or data tagging. Falling prices for smaller, faster models are a key reason AI is spreading into everyday business software, even as the priciest flagship models get more expensive and power-hungry.</p>
+        </details>
+      </div>
+    </article>
+  </section>
+
+  <section class="cat" data-cat="cyb">
+    <h2><span class="dot"></span>Cybersecurity</h2>
+
+    <article class="item">
+      <img class="thumb" src="https://www.bleepstatic.com/content/hl-images/2026/10/09/hacker-box.jpg" alt="Hacking illustration" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto" target="_blank" rel="noopener">Hackers exploit unpatched backup software to plant cryptocurrency miners</a>
+        <div class="meta">BleepingComputer · Friday, Oct 9</div>
+        <p class="summary">Attackers chained two flaws in AhsayCBS backup software to hijack servers at five organizations so far and mine crypto.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">AhsayCBS is used by IT service providers to back up client data, so a compromise there can ripple out to many downstream customers at once — a "supply-chain" risk. The vendor says the two flaws (CVE-2026-105133 and CVE-2026-105134, tracking numbers used to identify specific software bugs) are fixed in one version, but researchers found the newest version is still vulnerable, leaving administrators without a clear safe upgrade path.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://media.cybernews.com/images/featured-big/2026/10/JR-EAST-Series-E7-F19-resized-to-1200x660.jpeg" alt="Japanese train, affected by cloud outage" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://cybernews.com/security/japanese-cloud-cyberattack-railways-police-495-organizations-idcf/" target="_blank" rel="noopener">Ransomware attack on Japanese cloud provider disrupts railways, police and food suppliers</a>
+        <div class="meta">Cybernews · published Oct 9, updated Oct 10</div>
+        <p class="summary">A ransomware hit on SoftBank-owned cloud firm IDC Frontier affected 495 companies and government bodies, with some data unrecoverable.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">The attack hit railway operator JR East, Ibaraki prefectural police, a food logistics firm, and other everyday services that quietly depend on the same cloud infrastructure, showing how one breach can cascade across a country's economy. The provider says recovering some customer data from the hardest-hit servers may be impossible, and it's telling affected customers to rebuild from their own backups — a reminder that outsourcing IT doesn't remove the need for independent backups.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://i.abcnewsfe.com/a/d1c01c33-9429-4d08-92ac-4073b1080b0d/wirestory_b27bad3059c9ab93d1d7006d3af13c0a_16x9.jpg" alt="FBI" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://abcnews.com/US/wireStory/fbi-arrests-suspect-shinyhunters-hack-bureaus-jobs-portal-137133935" target="_blank" rel="noopener">FBI arrests a second suspect tied to hacking group that breached its own jobs site</a>
+        <div class="meta">AP, via ABC News · Friday, Oct 9</div>
+        <p class="summary">The arrest targets an alleged accomplice of ShinyHunters, a hacking group that stole personal data on nearly all FBI employees.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">ShinyHunters got in through a third-party vendor that ran the FBI's job-application portal, not the FBI's own systems directly — a common weak point since outside vendors often have looser security than the organizations they serve. Experts warn the stolen data, which reportedly includes agents' family details, could be used to harass or "swat" (falsely report emergencies at someone's home) FBI employees. This is the second arrest in the case, after Dutch police detained an alleged group leader last month.</p>
+        </details>
+      </div>
+    </article>
+  </section>
+
+  <section class="cat" data-cat="glb">
+    <h2><span class="dot"></span>Global &amp; Other Major News</h2>
+
+    <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Karl_Deisseroth_in_2025_Updated.jpg/960px-Karl_Deisseroth_in_2025_Updated.jpg" alt="Karl Deisseroth" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://en.wikipedia.org/wiki/2026_Nobel_Prize_in_Physiology_or_Medicine" target="_blank" rel="noopener">Nobel science prizes honor the tool that lets researchers control brain cells with light</a>
+        <div class="meta">Nobel Committee · week of Oct 5-9</div>
+        <p class="summary">Karl Deisseroth, Peter Hegemann and Georg Nagel won medicine's Nobel for "optogenetics," while Francis Halzen won physics for detecting cosmic neutrinos.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Optogenetics lets scientists switch specific brain cells on and off using light, a technique that has become a basic tool in neuroscience labs worldwide for studying memory, movement and disease. Halzen's prize recognizes the IceCube Observatory, a detector buried in Antarctic ice that catches ghostly particles called neutrinos streaming from deep space, opening a new way to study the universe beyond light-based telescopes.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Pedro_S%C3%A1nchez_2026_Portrait_%283x4_cropped%29.jpg" alt="Pedro Sánchez" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.france24.com/en/europe/20261011-spanish-pm-sanchez-kicks-off-election-campaign-amid-housing-crisis-protests" target="_blank" rel="noopener">Spain's PM launches snap-election campaign as housing protests mount</a>
+        <div class="meta">France 24 · Sunday, Oct 11</div>
+        <p class="summary">Pedro Sánchez kicked off his campaign for Spain's November 29 vote after his minority government lost in parliament.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Sánchez called the early election after failing to pass his legislative agenda, with a nationwide housing affordability crisis fueling protests and public anger. Polls currently show him trailing the conservative Popular Party, so the vote could end his years-long run as prime minister and shift Spain, the eurozone's fourth-largest economy, toward a more conservative government.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Portrait_officiel_de_S%C3%A9bastien_Lecornu_-_Ministre_des_Arm%C3%A9es_%28cropped%29.jpg/960px-Portrait_officiel_de_S%C3%A9bastien_Lecornu_-_Ministre_des_Arm%C3%A9es_%28cropped%29.jpg" alt="Sébastien Lecornu" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://dawn.com/news/2035324" target="_blank" rel="noopener">Nationwide French student protests over crumbling schools lead to hundreds of arrests</a>
+        <div class="meta">Dawn / AFP · week of Oct 6-11</div>
+        <p class="summary">Protests that began over broken school buildings and teacher shortages have spread across France, with hundreds detained.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">What started as student blockades over crumbling classrooms in a poor Paris suburb grew into a nationwide protest movement, with over 600 arrests reported in a single day and dozens of police and students injured. Prime Minister Sébastien Lecornu has ordered ministers to address the complaints by replacing absent teachers and fixing aging buildings, but the unrest adds to pressure on a French government already struggling with a tight budget and ahead of next year's presidential race.</p>
+        </details>
+      </div>
+    </article>
+  </section>
+
+  <section class="cat" data-cat="good">
+    <h2><span class="dot"></span>Something Good</h2>
+    <p class="good-sub">Three genuinely good things that happened in the world in the last 24 hours.</p>
+
+    <article class="item">
+      <img class="thumb" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Giant-Tortoises-in-the-Seychelles-SWNS.jpeg" alt="Giant tortoises" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.goodnewsnetwork.org/giant-tortoise-population-is-thriving-survey-finds-180000-on-one-island-chain/" target="_blank" rel="noopener">A remote island's giant tortoise population has swelled to about 180,000, the highest count ever recorded</a>
+        <div class="meta">Good News Network · Sunday, Oct 11</div>
+        <p class="summary">Conservationists on the Seychelles' Aldabra Atoll found nearly double the tortoise numbers last estimated in the 1990s.</p>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Sunset-on-Lake-Palestine-credit-TexasLand-provided-to-TPWF-as-a-courtesy.jpg" alt="Lake Palestine, Texas" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.goodnewsnetwork.org/family-sells-650-acres-on-east-texas-lake-to-become-state-park-saying-land-is-part-of-my-soul/" target="_blank" rel="noopener">A Texas family sold their 650-acre lakefront land so it could become a new state park</a>
+        <div class="meta">Good News Network · Monday, Oct 12</div>
+        <p class="summary">The Pollard family, who farmed pecans on the land for 80 years, chose conservation over a bigger private sale.</p>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="thumb" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/A-sloth-bear-named-Odum-by-Intl-Animal-Rescue-and-Wildlife-SOS-via-SWNS.jpeg" alt="Sloth bear Odum" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.goodnewsnetwork.org/sloth-bear-given-a-name-by-julia-roberts-is-flourishing/" target="_blank" rel="noopener">A sloth bear once forced to "dance" for tourists is now happily swimming and napping in a hammock</a>
+        <div class="meta">Good News Network · Saturday, Oct 10</div>
+        <p class="summary">Odum, the bear actress Julia Roberts named after his 2009 rescue, is thriving at an Indian sanctuary ahead of World Sloth Bear Day.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>Compiled Monday, October 12, 2026 · every headline links to its source · generated automatically<br>
+  <a href="index.html" style="color:var(--muted)">Past briefings</a></footer>
+</div>
+</body>
+</html>
