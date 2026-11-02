@@ -44,6 +44,10 @@ section.cat{margin-bottom:42px}
 section.cat > h2{display:flex;align-items:center;gap:12px;font-family:var(--sans);font-size:12px;font-weight:700;
   letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:0 0 20px}
 section.cat > h2::after{content:"";flex:1 1 auto;height:1px;background:var(--line)}
+.subcat{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin:22px 0 11px;display:flex;align-items:center;gap:9px}
+.subcat::before{content:"";width:5px;height:5px;background:var(--accent);transform:rotate(45deg);flex:0 0 auto}
+.subcat:first-of-type{margin-top:6px}
 .dot{width:9px;height:9px;flex:0 0 auto;background:var(--accent);transform:rotate(45deg)}
 section.cat[data-cat="geo"]{--accent:var(--geo)}
 section.cat[data-cat="mkt"]{--accent:var(--mkt)}
@@ -138,52 +142,52 @@ header h1{margin:0}
   <section class="tldr">
     <h2>Top 3 things to know</h2>
     <ol>
-      <li>US midterm elections Tuesday decide control of Congress and Trump's remaining agenda.</li>
-      <li>AI-chip stocks lost about $1 trillion in one day on spending-payoff fears.</li>
-      <li>Poland's president and prime minister are clashing over control of the top court.</li>
+      <li>Americans vote tomorrow in midterms that could flip control of Congress away from Trump's party.</li>
+      <li>Chipmaker Marvell is buying optics maker Lumentum for $115 billion, one of tech's biggest-ever deals.</li>
+      <li>Hackers linked to North Korea stole a record $6.3 billion from crypto exchange Binance.</li>
     </ol>
   </section>
 
   <figure class="herofig">
-    <img class="hero" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/US_Capitol_east_side.JPG/960px-US_Capitol_east_side.JPG" alt="" onerror="this.closest('figure').remove()">
-    <figcaption class="hero-cap">Control of Congress — and the rest of Trump's term — is on the ballot Tuesday.</figcaption>
+    <img class="hero" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/US_Capitol_east_side.JPG/960px-US_Capitol_east_side.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.closest('figure').remove()">
+    <figcaption class="hero-cap">Control of Congress is on the ballot as Americans vote in Tuesday's midterm elections.</figcaption>
   </figure>
 
   <section class="cat" data-cat="geo">
     <h2><span class="dot"></span>Geopolitics &amp; Diplomacy</h2>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/US_Capitol_east_side.JPG/960px-US_Capitol_east_side.JPG" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/US_Capitol_east_side.JPG/960px-US_Capitol_east_side.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.cnbc.com/2026/10/30/2026-midterm-election-wall-street-prepares-for-democratic-gains.html" target="_blank" rel="noopener">US midterm elections Tuesday will decide who controls Congress</a>
-        <div class="meta">CNBC · Sunday</div>
-        <p class="summary">Americans vote Tuesday in midterms that will decide control of Congress, with forecasts favoring Democrats to retake the House.</p>
+        <a class="headline" href="https://www.khaleejtimes.com/world/americas/us-midterm-elections-2026-voting-explainer" target="_blank" rel="noopener">US midterm elections tomorrow could flip control of Congress</a>
+        <div class="meta">Khaleej Times · Monday</div>
+        <p class="summary">Americans vote Tuesday for all 435 House seats and 35 Senate seats, with both chambers narrowly held by Republicans.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">All 435 House seats and 35 Senate seats are up, and Republicans currently hold both chambers narrowly. Most forecasters give Democrats a strong edge in the House and a real shot at the Senate too, which would let them block much of President Trump's remaining agenda and open investigations. The results will also be read as a verdict on the administration's first two years, from the economy to its recent military intervention in Venezuela.</p>
+          <p class="why">Every two years the US elects a new House of Representatives (the lower chamber of Congress) and about a third of the Senate; right now President Trump's Republican Party holds both by slim margins. Prediction markets see the opposition Democratic Party as favored to retake at least one chamber, which would let it block much of Trump's remaining agenda and open investigations into his administration. A split Congress would also reshape the run-up to the 2028 presidential race.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%28mais_estreita%29.jpg/960px-Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%28mais_estreita%29.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Israeli_Knesset_Current_Composition.svg/960px-Israeli_Knesset_Current_Composition.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.npr.org/2026/10/27/nx-s1-6019217/bolsonaro-flavio-lula-brazil-election-trump" target="_blank" rel="noopener">Lula wins re-election in Brazil as Trump calls the vote "rigged"</a>
-        <div class="meta">NPR · Oct 27</div>
-        <p class="summary">Brazil's Lula won re-election with about 51% of the vote, but rival Flávio Bolsonaro hasn't conceded and Trump calls it rigged.</p>
+        <a class="headline" href="https://www.wunc.org/2026-10-28/with-most-votes-counted-israeli-election-reaches-a-stalemate" target="_blank" rel="noopener">Israel's election ends in a dead heat, with no clear winner</a>
+        <div class="meta">NPR · Oct 28</div>
+        <p class="summary">Neither PM Netanyahu's bloc (53 seats) nor rival Gadi Eisenkot's (48) can reach the 61 needed for a majority.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">Flávio is the son of jailed former president Jair Bolsonaro, and while his party formally recognized Lula's win, it says questions about the vote still need answers. Trump's unsubstantiated "rigged" claim adds friction on top of existing US-Brazil trade disputes. A contested result could fuel unrest in Latin America's largest democracy and shape Brazil's Amazon and climate policy for another term.</p>
+          <p class="why">Israel held a pivotal national election, and with most votes counted neither of the two main political blocs can govern alone. Smaller Arab-led parties could act as "kingmakers" by backing one side, but neither bloc wants their support, which raises the odds of months of coalition haggling or even a repeat election, with Netanyahu staying on as caretaker prime minister in the meantime.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Karol_Nawrocki_%282025%29_%28cropped%29.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Delcy_Rodr%C3%ADguez_-_02_%2819-01-2026%29_%28cropped_2%29_%28b%29.jpg/960px-Delcy_Rodr%C3%ADguez_-_02_%2819-01-2026%29_%28cropped_2%29_%28b%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.usnews.com/news/world/articles/2026-10-31/polands-president-accuses-tusk-of-forced-takeover-of-countrys-top-court" target="_blank" rel="noopener">Poland's president and PM clash over control of top court</a>
-        <div class="meta">US News/Bloomberg · Oct 31–Nov 1</div>
-        <p class="summary">Poland's president accused the prime minister of a "forcible takeover" of the constitutional court, deepening a years-long rule-of-law fight.</p>
+        <a class="headline" href="https://www.riotimesonline.com/venezuela-politics-key-players-2026/" target="_blank" rel="noopener">Venezuela still run by a caretaker leader after Maduro's capture</a>
+        <div class="meta">Rio Times · October</div>
+        <p class="summary">Delcy Rodríguez governs under a court order since the US seized Maduro in January; he now faces a new torture charge in New York.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">The dispute traces back to 2015, when the previous nationalist government packed the court with loyal judges; Prime Minister Tusk's coalition has tried to fix it since 2023 but kept getting blocked. This week a judge seen as independent took charge of the tribunal from a government-aligned appointee, which President Nawrocki calls an illegal power grab and Tusk calls a necessary defense of the rule of law. The standoff has drawn protesters into Warsaw's streets and could weaken Tusk's governing coalition, a fight the European Union is watching closely.</p>
+          <p class="why">US forces captured former president Nicolás Maduro in a January 2026 operation and flew him to New York to face trial. Since then his former deputy, Delcy Rodríguez, has run Venezuela as an unelected caretaker leader, with Washington and the opposition calling the setup temporary. No election date has been announced, leaving the oil-rich country's political future unsettled almost a year later.</p>
         </details>
       </div>
     </article>
@@ -192,38 +196,38 @@ header h1{margin:0}
   <section class="cat" data-cat="mkt">
     <h2><span class="dot"></span>Markets &amp; Investments</h2>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/2788-2888_San_Tomas_Expwy.jpg/960px-2788-2888_San_Tomas_Expwy.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Data_Center_of_CNPC.jpg/960px-Data_Center_of_CNPC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.benzinga.com/markets/tech/26/10/62749985/chip-stocks-1-trillion-wipeout-intel-nvidia-amd-tsmc-broadcom" target="_blank" rel="noopener">Chipmakers lose about $1 trillion in value in a single day</a>
-        <div class="meta">Benzinga · Oct 30</div>
-        <p class="summary">Nvidia, Intel, AMD and other chipmakers lost roughly $1 trillion combined as investors grew nervous about sky-high AI spending.</p>
+        <a class="headline" href="https://www.sec.gov/Archives/edgar/data/0001633978/000119312526442758/d163169dex991.htm" target="_blank" rel="noopener">Marvell to buy AI optics maker Lumentum for $115 billion</a>
+        <div class="meta">SEC filing · Today</div>
+        <p class="summary">The all-stock deal for Nvidia-backed Lumentum is one of the largest tech acquisitions ever, aimed at AI data-center gear.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">Intel had its worst trading day since 1974, while AMD and Nvidia — the dominant maker of AI chips — also fell sharply. The selloff reflects worry that tech giants are borrowing heavily to build AI data centers faster than the payoff is showing up, not that chip demand itself is collapsing. Because these companies now make up a huge slice of the overall stock market, swings like this ripple into retirement accounts and index funds well beyond tech investors.</p>
+          <p class="why">Marvell makes chips that move data inside AI data centers, while Lumentum makes the optical (light-based) parts that move data between them; combining the two lets Marvell sell a fuller package to AI customers like Nvidia's partners. The price is about 24% above Lumentum's recent stock price, and the deal still needs sign-off from US and Chinese antitrust regulators, which could take a while.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/New_York_Stock_Exchange_Facade_2015.jpg/960px-New_York_Stock_Exchange_Facade_2015.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Aerial_view_of_Apple_Park_dllu.jpg/960px-Aerial_view_of_Apple_Park_dllu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.cnbc.com/2026/10/30/stock-market-next-week-outlook-for-nov-2-6-2026.html" target="_blank" rel="noopener">Wall Street braces for a pivotal week of earnings and the midterm vote</a>
-        <div class="meta">CNBC · Oct 30</div>
-        <p class="summary">Stocks head into a big week with Palantir, Apple and AMD reporting earnings, after the Nasdaq fell for a third straight week.</p>
+        <a class="headline" href="https://9to5mac.com/2026/10/06/apple-sets-q4-2026-earnings-release-for-november-2/" target="_blank" rel="noopener">Apple reports earnings today in new CEO's first call</a>
+        <div class="meta">9to5Mac · Today</div>
+        <p class="summary">Apple posts fiscal fourth-quarter results after the market close, with John Ternus leading his first earnings call as CEO.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">Big tech earnings, especially how much companies say they're spending on AI, have been swinging the whole market because a handful of them make up such a large share of major indexes. More than 80% of S&amp;P 500 companies that have reported so far beat profit estimates, a historically strong season, yet investors have punished heavy AI spenders anyway on fears the payoff is too far off. Tuesday's midterm elections add another layer of uncertainty to an already jumpy market.</p>
+          <p class="why">Apple had told investors to expect 9-11% revenue growth this quarter on strong iPhone sales, but a rough week for tech stocks has investors on edge about spending and margins. The results double as an early test of confidence in Ternus, who became chief executive this year, with analysts watching for signals on chip supply and the holiday shopping outlook.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/960px-Bitcoin.svg.png" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Nasdaq_Tower_May_2026.jpg/960px-Nasdaq_Tower_May_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://cryptoticker.io/en/bitcoin-price-etf-outflow-643-million-october-31/" target="_blank" rel="noopener">Bitcoin slides toward $77,600 in a third straight weekly decline</a>
-        <div class="meta">CryptoTicker/Coinbase · Oct 31–Nov 1</div>
-        <p class="summary">Bitcoin fell toward about $77,600, down roughly 3% over the past week, as investors pulled money out of crypto funds.</p>
+        <a class="headline" href="https://www.ajc.com/news/2026/10/the-sell-off-for-tech-stocks-worsens-and-overwhelms-wall-street/" target="_blank" rel="noopener">Wall Street just had its worst tech sell-off since June</a>
+        <div class="meta">AJC/AP · Oct 30</div>
+        <p class="summary">Alphabet posted its worst day ever and Intel its worst since the 1980s, as investors balked at AI spending and cash burn.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">The price is now well off its all-time high of about $126,000 reached in October 2025, mirroring the broader pullback from riskier assets alongside the tech-stock selloff. In one day alone, roughly $643 million was pulled from bitcoin ETFs — investment funds that trade like a stock and let ordinary investors hold bitcoin without owning it directly. Bitcoin still accounts for most of the roughly $1.56 trillion crypto market, so its moves set the tone for the whole sector.</p>
+          <p class="why">Big tech companies are spending hundreds of billions of dollars building AI data centers, and investors are starting to question whether that bet will pay off soon enough. Amazon's ballooning AI costs and Intel's cash-burn warning triggered the rout, erasing roughly $200 billion in combined market value in a day, though US stocks were clawing back some of that ground on Monday as oil prices fell.</p>
         </details>
       </div>
     </article>
@@ -232,38 +236,38 @@ header h1{margin:0}
   <section class="cat" data-cat="war">
     <h2><span class="dot"></span>War &amp; Conflict</h2>
     <article class="item">
-      <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/4/41/New_Year%27s_Eve_from_President_of_Ukraine_Volodymyr_Zelensky_%2831-12-2025%29_%28cropped%29.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Strait_of_Hormuz_and_Musandam_Peninsula_%28MODIS_2018-12-10%29.jpg/960px-Strait_of_Hormuz_and_Musandam_Peninsula_%28MODIS_2018-12-10%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.pravda.com.ua/eng/news/2026/10/25/8059662/" target="_blank" rel="noopener">Zelensky says he could accept freezing the war along current lines</a>
-        <div class="meta">Ukrainska Pravda · Oct 25</div>
-        <p class="summary">Ukraine's Zelensky signaled he could accept freezing the war along today's front lines, keeping over 75% of Ukraine's territory.</p>
+        <a class="headline" href="https://www.cbsnews.com/live-updates/iran-war-us-trump-diplomacy-threat-resume-attacks/" target="_blank" rel="noopener">Gulf states brace for new US-Iran strikes as talks stall</a>
+        <div class="meta">CBS News · Live updates</div>
+        <p class="summary">Iran says tankers hit mines in the Strait of Hormuz as days of Qatar-mediated talks end with no breakthrough in the 8-month war.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">After nearly three years of fighting, this marks a shift from Ukraine's earlier demand to fully reclaim occupied land, though Zelensky still refuses to formally recognize any territory as Russian. The shift follows US envoy Steve Witkoff's shuttle diplomacy between Moscow and Kyiv, while Russia's Putin says he wants a deal that gives him full control of the Donbas region. Fighting continues along roughly 1,000 kilometers of front line even as the diplomacy plays out, especially around the city of Pokrovsk.</p>
+          <p class="why">The US and Israel went to war with Iran in February 2026, and a shaky ceasefire has broken down and been patched back together several times since. Gulf Arab states are now preparing for the fighting to flare up again as talks in Qatar's capital, Doha, fail to produce a lasting deal, while the US defense secretary says American forces are ready to resume strikes. President Trump says the war will end soon "one way or the other."</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/War_in_Sudan_%282023%29.svg/960px-War_in_Sudan_%282023%29.svg.png" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Vladimir_Putin_%282026_02_23%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.wsbtv.com/news/world/sudans-power-grid/OPPUJFEXJUY6VMTVQOCRW7KXKQ/" target="_blank" rel="noopener">Drone strikes blamed on Sudan's RSF knock out power nationwide</a>
-        <div class="meta">AP via WSB-TV · Nov 1</div>
-        <p class="summary">Drone strikes blamed on Sudan's paramilitary RSF have knocked out power to more towns, part of 15 substations hit since early October.</p>
+        <a class="headline" href="https://www.yahoo.com/news/putin-demands-full-control-4-195000332.html" target="_blank" rel="noopener">Putin rejects Ukraine ceasefire offer, demands four regions outright</a>
+        <div class="meta">Bloomberg via Yahoo News</div>
+        <p class="summary">Russia's president is insisting on full control of four Ukrainian regions before any truce, stalling the latest US-brokered peace push.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">The RSF (Rapid Support Forces) is fighting Sudan's army in a civil war that has already displaced millions and caused famine in parts of the country; destroying power infrastructure deepens the toll on civilians with no role in the fighting. Sudan's government accuses Ethiopia of letting the RSF launch drones from an air base on its territory, risking a wider regional spillover. Officials say the national power grid is nearing collapse, threatening hospitals, water pumps and what's left of the economy.</p>
+          <p class="why">Russia doesn't fully control any of the four Ukrainian regions it claims to have annexed in 2022, but Putin wants Kyiv to hand them over as the price of peace. Ukraine and its Western backers call that a non-starter, so the stand-off continues to block a ceasefire, meaning heavy fighting along the eastern front drags on after more than four and a half years of war.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Zone-de-controle-M23.svg/960px-Zone-de-controle-M23.svg.png" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Images_of_war_23-25_from_Gaza%2C_by_Jaber_Badwen%2C_IMG_6315.jpg/960px-Images_of_war_23-25_from_Gaza%2C_by_Jaber_Badwen%2C_IMG_6315.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://zambianobserver.com/drc-president-tshisekedi-appeals-to-putin-for-help-ending-rwanda-dispute-amid-ongoing-eastern-conflict/" target="_blank" rel="noopener">US sanctions Rwanda's military over troops fighting inside Congo</a>
-        <div class="meta">Zambian Observer/SOFREP · Oct 28–30</div>
-        <p class="summary">The US sanctioned Rwanda's defense ministry for sending thousands of troops to back M23 rebels in eastern Congo, as Congo's president asks Russia for help.</p>
+        <a class="headline" href="https://www.omanobserver.om/article/1197064/world/region/israeli-strikes-kill-six-in-gaza" target="_blank" rel="noopener">Gaza's ceasefire is fraying as both sides trade blame</a>
+        <div class="meta">Oman Observer/Reuters</div>
+        <p class="summary">Israel says Hamas is rearming and has stepped up strikes; more than 1,400 Palestinians have reportedly died since October's truce began.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">M23 is a rebel group that has seized large parts of mineral-rich eastern Congo, including the provincial capital Goma; Rwanda has long denied backing it despite UN and US findings that thousands of its soldiers fight alongside the rebels. A US-brokered peace deal signed in Washington earlier this year hasn't stopped the fighting, and Congo's president Félix Tshisekedi turned to Vladimir Putin at a Moscow summit for help, a sign US diplomacy has stalled. The conflict has displaced millions and is tangled up with competition over Congo's cobalt and other minerals used in electronics.</p>
+          <p class="why">A US-brokered ceasefire ended two years of war in Gaza, but it never fully stopped the violence. Israel says its strikes answer Hamas attacks and rearmament, while Hamas denies that and accuses Israel of violating the truce. The dispute has also stalled the next phase of the peace plan, which depends on the militant group Hamas disarming before reconstruction can begin.</p>
         </details>
       </div>
     </article>
@@ -272,38 +276,38 @@ header h1{margin:0}
   <section class="cat" data-cat="ai">
     <h2><span class="dot"></span>Artificial Intelligence</h2>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/1515_Third_Street.jpg/960px-1515_Third_Street.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped%29.jpg/960px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://coinpaper.com/38172/open-ai-cuts-funding-target-by-10-billion-as-ai-stock-crash-threatens-1-25-trillion-valuation" target="_blank" rel="noopener">OpenAI reportedly shrinks its funding target as AI stock fears grow</a>
-        <div class="meta">Coinpaper · Oct 31</div>
-        <p class="summary">OpenAI has reportedly cut its fundraising target from $30 billion to $20 billion, and its valuation goal from $1.4 trillion to $1.25 trillion.</p>
+        <a class="headline" href="https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/" target="_blank" rel="noopener">Anthropic files for what could be one of the biggest IPOs ever</a>
+        <div class="meta">TechCrunch · Oct 26</div>
+        <p class="summary">The Claude chatbot maker, led by CEO Dario Amodei, plans to list as "ANT"; its filing shows $16.3B revenue but an $80.7B loss.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">The reported pullback comes as investors question whether AI companies' massive spending on chips and data centers will pay off fast enough — the same worry behind this week's chip-stock selloff. OpenAI, which makes ChatGPT, has reportedly been racing to finish fundraising before rival Anthropic's expected stock-market debut, since both are courting overlapping investors. Neither company has officially confirmed these numbers, but a lower target would be a notable shift after years of ever-rising AI valuations.</p>
+          <p class="why">Anthropic is seeking a stock market listing (an IPO, or initial public offering) that could value it among the biggest companies ever to go public. Most of its enormous reported loss comes from non-cash accounting tied to earlier funding rounds, not actual cash burn, but the filing is also notable for openly warning investors that advanced AI could pose catastrophic risks to humanity. Credit-rating agencies are still expected to rate its debt as "junk" even after it lists.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Slack_offices%2C_Howard_Street%2C_San_Francisco_%28viewed_from_the_south-west%2C_January_2020%29.jpg/960px-Slack_offices%2C_Howard_Street%2C_San_Francisco_%28viewed_from_the_south-west%2C_January_2020%29.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Elon_Musk_-_54820081119_%283x4_cropped%2C_Rule_of_thirds%29.jpg/960px-Elon_Musk_-_54820081119_%283x4_cropped%2C_Rule_of_thirds%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.fool.com/investing/2026/10/29/anthropic-could-begin-marketing-its-ipo-the-week-o/" target="_blank" rel="noopener">Anthropic reportedly prepares to go public as early as this month</a>
-        <div class="meta">The Motley Fool · Oct 29</div>
-        <p class="summary">Claude maker Anthropic could start pitching its stock to investors the week of November 9, ahead of a possible listing before Thanksgiving.</p>
+        <a class="headline" href="https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/" target="_blank" rel="noopener">Chatbots split along party lines when forced to pick in the midterms</a>
+        <div class="meta">TechCrunch · Oct 24</div>
+        <p class="summary">A study found Elon Musk's Grok recommended Republican candidates 92% of the time, while OpenAI's ChatGPT picked Democrats 97% of the time.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">Anthropic filed the public version of its IPO (initial public offering, a company's first sale of stock to the public) paperwork on October 26, starting a required waiting period before it can pitch investors. Reports put its target valuation as high as $2 trillion, which would make it one of the largest tech listings ever, though some recent reports suggest it may price lower given current AI-stock jitters. A successful debut would be a major test of investor appetite for AI companies after a rocky few weeks for tech stocks.</p>
+          <p class="why">Researchers asked several AI chatbots to make a choice in competitive midterm races and found a clear partisan split depending on which company built the bot. The finding lands just before Tuesday's elections and raises fresh questions about how much people's political views could be quietly shaped by whichever AI assistant they happen to use.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_Apple_Siri_iOS_2024.svg/960px-Logo_Apple_Siri_iOS_2024.svg.png" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/960px-OpenAI_logo_2025_%28symbol%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.kucoin.com/news/flash/apple-integrates-alibaba-s-qwen-into-siri-and-writing-tools-for-chinese-market" target="_blank" rel="noopener">Apple will use a Chinese rival's AI to power Siri in China</a>
-        <div class="meta">Multiple outlets · late Oct</div>
-        <p class="summary">Apple is rolling out a China-only version of Siri built on AI technology from Alibaba's Qwen, with a developer preview starting November 4.</p>
+        <a class="headline" href="https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/" target="_blank" rel="noopener">OpenAI merges ChatGPT's two main modes into one</a>
+        <div class="meta">TechCrunch · Today</div>
+        <p class="summary">ChatGPT's separate "Chat" and "Work" tabs are being combined, and the Codex coding tool now shares the same usage limits.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">Apple needed a China-based AI partner because foreign AI models, including its own, face regulatory hurdles there; Chinese regulators approved the Apple-Alibaba partnership in July. The deal shows how US tech giants must adapt their AI products market-by-market under China's rules, and it's a win for Alibaba, a Chinese tech giant whose US-listed shares jumped over 6% on the news. It also shows how central AI assistants have become to Apple's strategy, even where it can't use its usual playbook.</p>
+          <p class="why">OpenAI had been testing separate ChatGPT layouts for casual chat versus work tasks; folding them into one view is meant to simplify the product as competition with Google and Anthropic intensifies. Tying the Codex coding tool's usage into the main ChatGPT allowance could also mean heavy coding users hit their limits faster than before.</p>
         </details>
       </div>
     </article>
@@ -311,38 +315,65 @@ header h1{margin:0}
 
   <section class="cat" data-cat="cyb">
     <h2><span class="dot"></span>Cybersecurity</h2>
+    <h3 class="subcat">Attacks &amp; Breaches</h3>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/960px-Visual_Studio_Code_1.35_icon.svg.png" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Binance-BNB-Icon-Logo.wine.svg/960px-Binance-BNB-Icon-Logo.wine.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/" target="_blank" rel="noopener">Hackers slipped a backdoored Claude Code extension into Cursor's marketplace</a>
-        <div class="meta">Help Net Security · Oct 30</div>
-        <p class="summary">A tampered version of Anthropic's Claude Code extension sat in code editor Cursor's marketplace for about 11 hours, hitting up to 5,000 users.</p>
+        <a class="headline" href="https://www.nextgov.com/cybersecurity/2026/10/fbi-involved-response-63-billion-binance-hack-linked-north-korea/416946/" target="_blank" rel="noopener">Hackers steal record $6.3 billion from crypto exchange Binance</a>
+        <div class="meta">Nextgov/FCW · Oct 30</div>
+        <p class="summary">Blockchain investigators blame North Korea's state-linked "TraderTraitor" hackers for the biggest crypto theft ever recorded.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">Claude Code is a popular AI coding assistant, and the fake extension tried to open SSH (a remote-login protocol) access on infected developers' machines, which could let attackers return later. Cursor says the malicious version wasn't made by Anthropic and came through a third-party marketplace called Open VSX rather than Microsoft's official one, exposing a weak link in how developer tools get distributed. This is exactly the kind of software supply-chain attack security teams worry about most, since one compromised tool can spread to thousands of machines that trust it.</p>
+          <p class="why">Roughly $6.3 billion drained out of Binance's crypto wallets in about 20 minutes — more than four times the previous record crypto theft. Security firms say the attack bears the fingerprints of North Korean state hackers, who have stolen billions from crypto firms before to help fund the isolated regime. Binance says it will cover customer losses and has frozen about $3 billion of the stolen funds, but the FBI has not yet officially confirmed who is responsible.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/GitLab_logo_%282%29.svg/960px-GitLab_logo_%282%29.svg.png" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/a/a2/NAS_server.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/" target="_blank" rel="noopener">Critical flaw in GitLab's software gets a government must-patch order</a>
-        <div class="meta">Help Net Security/CISA · Oct 29</div>
-        <p class="summary">A maximum-severity flaw in GitLab, a widely used code-hosting platform, is being actively exploited, and the US government ordered its own agencies to patch it.</p>
+        <a class="headline" href="https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/" target="_blank" rel="noopener">Ransomware gang hits outdated Synology storage devices</a>
+        <div class="meta">BleepingComputer · Today</div>
+        <p class="summary">The Cerber ransomware group is exploiting a flaw patched back in December 2024, locking files on devices that were never updated.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">The bug, tracked as CVE-2026-97229 — a public ID number assigned to known software flaws — scores a perfect 10 out of 10 for severity and could let an attacker run their own code on a vulnerable server. CISA, the US cybersecurity agency, added it to its must-patch list on October 29, giving federal agencies until November 1 to fix it and signaling to everyone else that it's actively being abused. Because many companies run their own software development on GitLab, one unpatched server can become a foothold for attackers to reach deeper into a company's systems.</p>
+          <p class="why">Synology devices are popular small-business and home network storage boxes (NAS, or network-attached storage), and this attack only works on machines running old, unpatched software. It's a reminder that most ransomware doesn't rely on sophisticated hacking — it exploits known flaws that victims simply never got around to fixing.</p>
         </details>
       </div>
     </article>
     <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Brain-virus.jpg/960px-Brain-virus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack" target="_blank" rel="noopener">Hackers drain $2.7 million from betting site Polymarket's users</a>
-        <div class="meta">SecurityWeek · Oct 29</div>
-        <p class="summary">Hackers compromised a third-party analytics script to drain about $2.7 million from more than 700 Polymarket trading accounts before the site paused trading.</p>
+        <a class="headline" href="https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/" target="_blank" rel="noopener">Japanese hosting giant GMO refuses $53 million ransom demand</a>
+        <div class="meta">BleepingComputer · Late October</div>
+        <p class="summary">Hackers who breached GMO Internet's cloud hosting service demanded ¥8 billion; the firm refused to pay and told customers to shut down machines.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">Polymarket is a prediction market where people bet real money on the outcome of events; attackers didn't breach Polymarket itself but a website-monitoring tool called DebugBear it relied on — a classic supply-chain attack where a trusted vendor becomes the weak point. Polymarket has promised to fully refund affected users, covering both the theft and related service disruption. The incident is a reminder that even well-funded platforms can be exposed through tools and vendors most users have never heard of.</p>
+          <p class="why">GMO is one of Japan's biggest internet and hosting companies, so a breach there could ripple out to many smaller business customers who rely on its servers. The attackers leaked some stolen data, but because GMO refused to pay and acted quickly, no ransomware was actually triggered on customer machines.</p>
+        </details>
+      </div>
+    </article>
+    <h3 class="subcat">Vulnerabilities &amp; Patches</h3>
+    <article class="item">
+      <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Citrix_office_building_in_Fort_Lauderdale.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://www.securityweek.com/critical-netscaler-vulnerability-exploited-in-attacks/" target="_blank" rel="noopener">Hackers are actively exploiting a critical flaw in Citrix NetScaler</a>
+        <div class="meta">SecurityWeek</div>
+        <p class="summary">CVE-2026-19490, a bug that lets attackers bypass login checks, has been under attack since September; US agencies had just three days to patch it.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">NetScaler devices sit at the front door of many corporate networks, controlling who gets let in, so a flaw that bypasses that login check is especially dangerous. The US cyber agency CISA's unusually tight three-day patching deadline for federal agencies signals how seriously officials view attackers already exploiting this bug (tracked as CVE-2026-19490, a publicly catalogued software flaw) in real attacks.</p>
+        </details>
+      </div>
+    </article>
+    <article class="item">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/960px-Operating_system_placement.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
+      <div class="body">
+        <a class="headline" href="https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html" target="_blank" rel="noopener">AI workflow tool Orkes Conductor hit by thousands of hacking attempts</a>
+        <div class="meta">The Hacker News</div>
+        <p class="summary">CVE-2026-58138 lets attackers run code on vulnerable servers without logging in; nearly 7,000 exploit attempts were blocked in one week.</p>
+        <details class="more">
+          <summary>Why it matters</summary>
+          <p class="why">Orkes Conductor helps companies automate complex software and AI workflows, so a flaw letting outsiders run their own code on it (remote code execution, a bug that lets an attacker take control of a server from afar) could hand criminals a foothold deep inside a company's systems. It's already fixed in the latest version, but the volume of attack traffic shows how fast criminals move once a bug like this becomes public knowledge.</p>
         </details>
       </div>
     </article>
@@ -351,38 +382,26 @@ header h1{margin:0}
   <section class="cat" data-cat="glb">
     <h2><span class="dot"></span>Global &amp; Other Major News</h2>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Delcy_Rodr%C3%ADguez_-_02_%2819-01-2026%29_%28cropped_2%29_%28b%29.jpg/960px-Delcy_Rodr%C3%ADguez_-_02_%2819-01-2026%29_%28cropped_2%29_%28b%29.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Perseverance-Selfie-at-Rochette-Horizontal-V2.gif/960px-Perseverance-Selfie-at-Rochette-Horizontal-V2.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://en.mercopress.com/2026/10/29/i-am-the-right-person-delcy-rodriguez-casts-herself-as-guarantor-of-venezuela-s-transition" target="_blank" rel="noopener">Venezuela's acting leader promises elections but gives no date</a>
-        <div class="meta">MercoPress · Oct 29</div>
-        <p class="summary">Venezuela's acting President Delcy Rodríguez pledged to guide the country to elections, while opposition leader María Corina Machado calls the transition "unstoppable."</p>
+        <a class="headline" href="https://www.space.com/perseverance-distance-record-mars" target="_blank" rel="noopener">NASA's Perseverance rover sets a new Mars driving record</a>
+        <div class="meta">Space.com · October</div>
+        <p class="summary">The rover has now driven 28.10 miles on Mars, breaking the old off-world distance record set by its predecessor, Opportunity.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">Rodríguez took over after the US captured former president Nicolás Maduro in a January military operation and flew him out of the country. Machado, a prominent opposition figure who recently returned to Venezuela after months abroad, insists change is heading toward a 2027 presidential vote and denies coordinating with Rodríguez. The uncertainty over who truly leads Venezuela, and on what timeline, matters well beyond its borders given the country's oil reserves and deepening US involvement there.</p>
+          <p class="why">Opportunity took 14 years to rack up its old distance record; Perseverance did it in just five and a half years, largely thanks to self-driving software that now handles more than 90% of its route-planning on Mars. NASA says the rover, still healthy, could end up more than doubling that distance before its mission eventually ends.</p>
         </details>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Himalaya_composite.jpg/960px-Himalaya_composite.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Dimorphos_and_Didymos_as_seen_by_DARTMission.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://gulfnews.com/world/asia/at-least-16-dead-in-magnitude-7-quake-in-tibet-china-state-media-1.500720509" target="_blank" rel="noopener">Magnitude-7 earthquake in Tibet has killed at least 16 people</a>
-        <div class="meta">Gulf News/state media · Oct 22–23</div>
-        <p class="summary">A magnitude-7 earthquake struck a remote part of Tibet last week, killing at least 16 people, injuring 65 and destroying hundreds of homes.</p>
+        <a class="headline" href="https://www.esa.int/Safety_Security/Hera/First_light_Hera_resolves_two_asteroids_instead_of_one" target="_blank" rel="noopener">Europe's asteroid probe gets its first clear look at its target</a>
+        <div class="meta">European Space Agency · Oct 27</div>
+        <p class="summary">The Hera spacecraft has photographed asteroids Didymos and Dimorphos as two distinct objects for the first time, ahead of a close flyby.</p>
         <details class="more">
           <summary>Why it matters</summary>
-          <p class="why">The quake hit Baqên County in the sparsely populated Nagqu region, which officials say likely limited the death toll compared with a similar quake in the same region last year that killed over 100 people. More than 400 aftershocks followed, complicating rescue and rebuilding work at high altitude. The area sits where the Indian and Eurasian tectonic plates collide, making damaging earthquakes a recurring risk for the region.</p>
-        </details>
-      </div>
-    </article>
-    <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Colorized_transmission_electron_micrograph_of_Avian_influenza_A_H5N1_viruses.jpg/960px-Colorized_transmission_electron_micrograph_of_Avian_influenza_A_H5N1_viruses.jpg" alt="" onerror="this.remove()">
-      <div class="body">
-        <a class="headline" href="https://outbreaknewstoday.substack.com/p/h5n1-avian-influenza-2nd-human-case" target="_blank" rel="noopener">Bird flu infects a second person in Washington state as outbreaks spread</a>
-        <div class="meta">Outbreak News Today/CIDRAP · late Oct</div>
-        <p class="summary">A second human case of H5N1 bird flu was confirmed in Washington state, as the virus keeps turning up on US dairy and poultry farms.</p>
-        <details class="more">
-          <summary>Why it matters</summary>
-          <p class="why">H5N1, commonly called bird flu, has been spreading in dairy cattle and poultry across the US for over a year; this case was linked to infected dairy cows, and health officials say there's still no sign it spreads between people. New outbreaks were also confirmed this week on a Colorado dairy farm and an Iowa turkey flock of roughly 44,000 birds, prompting a state disaster declaration. Scientists are watching closely because a season when human flu and bird flu circulate together raises the small but real risk the virus could mix and change in dangerous ways.</p>
+          <p class="why">Hera is studying the aftermath of NASA's 2022 DART mission, which deliberately crashed a spacecraft into the smaller asteroid, Dimorphos, to test whether humanity could knock a dangerous asteroid off course. Hera's more detailed follow-up images, due later this month, should reveal the impact site and help scientists learn how to defend Earth from a real asteroid threat one day.</p>
         </details>
       </div>
     </article>
@@ -390,29 +409,29 @@ header h1{margin:0}
 
   <section class="cat" data-cat="good">
     <h2><span class="dot"></span>Something Good</h2>
-    <p class="good-sub">Three genuinely good things that happened in the world in the last day or so.</p>
+    <p class="good-sub">Three genuinely good things that happened in the world recently.</p>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Miller_Park_in_Milwaukee%2C_Wisconsin.jpg/960px-Miller_Park_in_Milwaukee%2C_Wisconsin.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/ETH_Z%C3%BCrich_-_Hauptgeb%C3%A4ude_-_Unispital_2012-07-30_07-57-03_ShiftN.jpg/960px-ETH_Z%C3%BCrich_-_Hauptgeb%C3%A4ude_-_Unispital_2012-07-30_07-57-03_ShiftN.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://spectrumnews1.com/wi/milwaukee/news/2026/10/28/milwaukee-brewers-win-world-series" target="_blank" rel="noopener">The Milwaukee Brewers win their first World Series title ever</a>
-        <div class="meta">Spectrum News 1 · Oct 28</div>
-        <p class="summary">The Milwaukee Brewers beat the Tampa Bay Rays to win the 2026 World Series — the franchise's very first championship in 58 years.</p>
+        <a class="headline" href="https://www.news-medical.net/news/20261023/Electronic-implant-lowers-blood-glucose-and-reduces-weight-in-mice.aspx" target="_blank" rel="noopener">Scientists build an implant that controls blood sugar without insulin</a>
+        <div class="meta">ETH Zurich / Science · Oct 23</div>
+        <p class="summary">An experimental wireless implant cleared dangerously high blood sugar in diabetic mice within an hour, with no insulin shots needed.</p>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Perseverance-Selfie-at-Rochette-Horizontal-V2.gif/960px-Perseverance-Selfie-at-Rochette-Horizontal-V2.gif" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.guinnessworldrecords.com/news/2026/10/nasas-perseverance-rover-breaks-the-record-for-longest-road-trip-on-mars" target="_blank" rel="noopener">NASA's Perseverance rover sets a new world record for driving on Mars</a>
-        <div class="meta">NASA/Guinness World Records · Oct 2026</div>
-        <p class="summary">NASA's Perseverance rover just broke the record for the farthest total distance ever driven on another world, topping the old mark set by Opportunity.</p>
+        <a class="headline" href="https://www.wtvr.com/science-and-tech/animals-and-insects/wildlife-populations-have-shrunk-73-since-1970-a-new-report-argues-there-is-still-a-case-for-hope" target="_blank" rel="noopener">Green sea turtles are no longer considered endangered</a>
+        <div class="meta">WWF Living Planet Report · Oct 8</div>
+        <p class="summary">Fifty years of conservation across roughly 80 countries moved the species off the endangered list, and wild tiger numbers have nearly doubled since 2010.</p>
       </div>
     </article>
     <article class="item">
-      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tanjung_Puting30477.jpg/960px-Tanjung_Puting30477.jpg" alt="" onerror="this.remove()">
+      <img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Bleachedcoral.jpg/960px-Bleachedcoral.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="" onerror="this.remove()">
       <div class="body">
-        <a class="headline" href="https://www.getaway.co.za/wildlife-roundup/good-news-for-nature-recent-wildlife-and-conservation-updates/" target="_blank" rel="noopener">Rescuers move orangutans to safety from Borneo's fire-damaged forests</a>
-        <div class="meta">Getaway/Reuters · Oct 2026</div>
-        <p class="summary">Conservationists relocated eight more orangutans from fire-damaged forest in Indonesian Borneo to a protected sanctuary, bringing the total rescued since August to 46.</p>
+        <a class="headline" href="https://news.stanford.edu/stories/2026/10/reverse-coral-bleaching-record-speed" target="_blank" rel="noopener">Bleached coral can heal fast with a simple touch, study finds</a>
+        <div class="meta">Stanford University · October</div>
+        <p class="summary">Researchers found severely bleached coral fragments fully recovered within weeks after touching a healthy, genetically identical piece.</p>
       </div>
     </article>
   </section>
